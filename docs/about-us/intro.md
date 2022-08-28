@@ -6,9 +6,9 @@ sidebar_position: 1
 
 # Hello!
 
-I can write text that is rendered reasonably well.
+The content I haven't yet filled in, so this is just a feature demo.
 
-Oh, and the content I haven't yet filled in.
+I can write text that is rendered reasonably well.
 
 ## 中文兼容
 

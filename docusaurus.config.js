@@ -12,7 +12,7 @@ const config = {
   tagline: 'The Ulink Alumni Association',
   url: 'https://ulink-uaa.github.io/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
@@ -86,7 +86,7 @@ const config = {
             items: [
               {
                 label: 'Our Story',
-                to: '/docs/intro',
+                to: '/docs/about-us/intro',
               },
             ],
           },
@@ -94,17 +94,9 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'Code that makes this site',
+                href: 'https://github.com/ulink-uaa/ulink-uaa-site',
+              }
             ],
           },
           {

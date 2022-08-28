@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const githubRepo = 'https://github.com/ulink-uaa/ulink-uaa-site/tree/master/';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'UAA',
@@ -23,8 +25,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -36,15 +38,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: githubRepo,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: githubRepo,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,34 +57,35 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'UAA Website',
+        title: '领科校友会',
         logo: {
-          alt: 'My Site Logo',
+          alt: '领科校友会Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'about-us/intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'About us',
+            // to: '/docs/about_us'
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/ulink-uaa/ulink-uaa-site',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'About us',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Our Story',
                 to: '/docs/intro',
               },
             ],
@@ -120,7 +121,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ulink Alumni Association. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
